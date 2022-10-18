@@ -15,9 +15,9 @@ description = "Subxt integration tests that rely on the Substrate binary"
 default = ["subxt/integration-tests"]
 
 [dev-dependencies]
-sp-keyring = { package = "sp-keyring", git = "https://github.com/paritytech/substrate" }
-sp-runtime = { package = "sp-runtime", git = "https://github.com/paritytech/substrate", default-features = false }
-sp-core = { package = "sp-core", git = "https://github.com/paritytech/substrate", default-features = false }
+sp-keyring = { package = "sp-keyring", git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.30" }
+sp-runtime = { package = "sp-runtime", git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.30", default-features = false }
+sp-core = { package = "sp-core", git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.30", default-features = false }
 assert_matches = "1.5.0"
 codec = { package = "parity-scale-codec", version = "3.0.0", default-features = false, features = [
     "derive",
